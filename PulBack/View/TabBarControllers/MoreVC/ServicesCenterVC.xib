@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServicesCenterVC" customModule="PulBack" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLbl" destination="TqW-aQ-2sz" id="oLf-cK-v4V"/>
+                <outlet property="callBtn" destination="Luv-HB-yAM" id="Er7-F1-roB"/>
+                <outlet property="callLbl" destination="dOj-9b-nhh" id="cSz-s2-joM"/>
+                <outlet property="directionBtn" destination="m0B-LH-PDS" id="X3M-6n-aig"/>
+                <outlet property="directionLbl" destination="kFm-TI-VUA" id="H6r-AI-sqX"/>
+                <outlet property="marketLbl" destination="oKz-7i-rST" id="ASa-RL-dV8"/>
+                <outlet property="scanerBtn" destination="T3a-CY-txn" id="eJd-cp-kg9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="c71-iy-YzL">
+                    <rect key="frame" x="50" y="114" width="328" height="98.333333333333314"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bhf-Lk-6aJ">
+                            <rect key="frame" x="0.0" y="0.0" width="328" height="25.333333333333332"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="tiin ulgurji savdo do'koni " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="oKz-7i-rST">
+                                    <rect key="frame" x="0.0" y="0.0" width="242.33333333333334" height="25.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Ochiq" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuz-ah-zxC">
+                                    <rect key="frame" x="242.33333333333329" y="0.0" width="85.666666666666657" height="25.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                    <color key="textColor" systemColor="systemGreenColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" text="Mirzo Ulug'bek rayoni Sayram 5,proezd Toshkent ,O'zbekistan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqW-aQ-2sz">
+                            <rect key="frame" x="0.0" y="50.333333333333343" width="328" height="48"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="FgC-Ry-afg">
+                    <rect key="frame" x="40" y="242.33333333333334" width="348" height="58.666666666666657"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LXv-Vi-UXh">
+                            <rect key="frame" x="0.0" y="0.0" width="147" height="58.666666666666664"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luv-HB-yAM">
+                                    <rect key="frame" x="58.666666666666664" y="0.0" width="29.666666666666664" height="29.666666666666668"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Luv-HB-yAM" secondAttribute="height" id="czf-z4-t9H"/>
+                                    </constraints>
+                                    <color key="tintColor" systemColor="systemGreenColor"/>
+                                    <state key="normal" image="call"/>
+                                    <connections>
+                                        <action selector="callNumber:" destination="-1" eventType="touchUpInside" id="sjb-cR-uWO"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" ambiguous="YES" text="Qo'ng'iroq qilish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="dOj-9b-nhh">
+                                    <rect key="frame" x="0.0" y="34.666666666666657" width="147" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="l2z-bW-8dQ">
+                            <rect key="frame" x="197" y="0.0" width="151" height="58.666666666666664"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0B-LH-PDS">
+                                    <rect key="frame" x="60.666666666666679" y="0.0" width="29.666666666666664" height="29.666666666666668"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="m0B-LH-PDS" secondAttribute="height" id="355-mA-FFN"/>
+                                    </constraints>
+                                    <color key="tintColor" systemColor="systemGreenColor"/>
+                                    <state key="normal" image="direction"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Yo'nalish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFm-TI-VUA">
+                                    <rect key="frame" x="35.333333333333321" y="34.666666666666657" width="80.666666666666686" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="m0B-LH-PDS" firstAttribute="height" secondItem="Luv-HB-yAM" secondAttribute="height" id="2sl-ik-NiI"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3a-CY-txn">
+                    <rect key="frame" x="164" y="351" width="100" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <state key="normal" title="Skanerlash">
+                        <color key="titleColor" name="customRed"/>
+                    </state>
+                    <connections>
+                        <action selector="scanBtnPressed:" destination="-1" eventType="touchUpInside" id="a7E-Df-L0e"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FgC-Ry-afg" secondAttribute="trailing" constant="40" id="2tA-rU-HQ2"/>
+                <constraint firstItem="c71-iy-YzL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="52W-qj-Z3e"/>
+                <constraint firstItem="c71-iy-YzL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="Lzq-EE-XmJ"/>
+                <constraint firstItem="FgC-Ry-afg" firstAttribute="top" secondItem="c71-iy-YzL" secondAttribute="bottom" constant="30" id="OB7-3Y-fOz"/>
+                <constraint firstItem="Luv-HB-yAM" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.032" id="TZD-WI-r2u"/>
+                <constraint firstItem="T3a-CY-txn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XZn-7d-lL9"/>
+                <constraint firstAttribute="trailing" secondItem="c71-iy-YzL" secondAttribute="trailing" constant="50" id="YVo-FA-JgE"/>
+                <constraint firstItem="FgC-Ry-afg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="gyU-YZ-YDx"/>
+                <constraint firstItem="T3a-CY-txn" firstAttribute="top" secondItem="FgC-Ry-afg" secondAttribute="bottom" constant="50" id="wUi-2s-B9p"/>
+            </constraints>
+            <point key="canvasLocation" x="-216" y="43"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="call" width="128" height="128"/>
+        <image name="direction" width="128" height="128"/>
+        <namedColor name="customRed">
+            <color red="0.84700000286102295" green="0.32899999618530273" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

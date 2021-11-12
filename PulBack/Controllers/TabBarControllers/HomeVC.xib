@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="PulBack" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="SZP-lA-Daa" id="jnx-sG-1Bn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PulBack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKz-45-lgQ">
+                    <rect key="frame" x="177" y="54" width="60.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SZP-lA-Daa">
+                    <rect key="frame" x="0.0" y="74.5" width="414" height="787.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SZP-lA-Daa" secondAttribute="trailing" id="JKY-Hk-ExO"/>
+                <constraint firstItem="cKz-45-lgQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="hy5-Tv-wb6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SZP-lA-Daa" secondAttribute="bottom" id="lew-3i-x5Q"/>
+                <constraint firstItem="SZP-lA-Daa" firstAttribute="top" secondItem="cKz-45-lgQ" secondAttribute="bottom" id="qF8-Wj-KJp"/>
+                <constraint firstItem="SZP-lA-Daa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sO2-bQ-Qbs"/>
+                <constraint firstItem="cKz-45-lgQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u6e-JN-lCU"/>
+            </constraints>
+            <point key="canvasLocation" x="-146.37681159420291" y="69.642857142857139"/>
+        </view>
+    </objects>
+</document>

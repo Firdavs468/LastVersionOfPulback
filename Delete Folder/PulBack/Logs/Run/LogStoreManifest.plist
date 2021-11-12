@@ -5,6 +5,41 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>F2D1836D-D4BF-4DE6-B5A7-6AB8ACF2A89E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F2D1836D-D4BF-4DE6-B5A7-6AB8ACF2A89E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PulBack project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PulBack</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run PulBack</string>
+			<key>timeStartedRecording</key>
+			<real>652435082.97930598</real>
+			<key>timeStoppedRecording</key>
+			<real>652437356.18018699</real>
+			<key>title</key>
+			<string>Run PulBack</string>
+			<key>uniqueIdentifier</key>
+			<string>F2D1836D-D4BF-4DE6-B5A7-6AB8ACF2A89E</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

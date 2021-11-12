@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRCode" customModule="PulBack" customModuleProvider="target">
+            <connections>
+                <outlet property="useDuringLbl" destination="1O1-Zy-hJ0" id="HLi-UX-Bkw"/>
+                <outlet property="view" destination="4AD-Pt-HNt" id="zhb-5v-fb6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4AD-Pt-HNt">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6t-SK-RVl">
+                    <rect key="frame" x="50" y="194" width="314" height="359"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xiJ-dZ-P3x">
+                            <rect key="frame" x="20" y="20" width="274" height="319"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To'lov paytida barkoddan foydalaning" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O1-Zy-hJ0">
+                                    <rect key="frame" x="25" y="0.0" width="224.5" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="barcode" translatesAutoresizingMaskIntoConstraints="NO" id="AUv-z5-SP4">
+                                    <rect key="frame" x="30" y="129.5" width="214" height="72"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+998942496636" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-Rt-AtW">
+                                    <rect key="frame" x="58.5" y="295" width="157.5" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="AUv-z5-SP4" secondAttribute="trailing" constant="30" id="HHa-bn-RfS"/>
+                                <constraint firstItem="AUv-z5-SP4" firstAttribute="leading" secondItem="xiJ-dZ-P3x" secondAttribute="leading" constant="30" id="gDG-h1-j4V"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="AUv-z5-SP4" firstAttribute="height" secondItem="Y6t-SK-RVl" secondAttribute="height" multiplier="0.2" id="2VZ-7G-WMX"/>
+                        <constraint firstItem="xiJ-dZ-P3x" firstAttribute="leading" secondItem="Y6t-SK-RVl" secondAttribute="leading" constant="20" id="Ekg-bx-vvX"/>
+                        <constraint firstAttribute="trailing" secondItem="xiJ-dZ-P3x" secondAttribute="trailing" constant="20" id="JzG-94-XUU"/>
+                        <constraint firstItem="xiJ-dZ-P3x" firstAttribute="top" secondItem="Y6t-SK-RVl" secondAttribute="top" constant="20" id="TCB-hN-7xk"/>
+                        <constraint firstAttribute="bottom" secondItem="xiJ-dZ-P3x" secondAttribute="bottom" constant="20" id="v2v-cC-cHy"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ8-FG-4Mq">
+                    <rect key="frame" x="50" y="603" width="314" height="62.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Yopish">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cancelBtnPressed:" destination="-1" eventType="touchUpInside" id="t9e-ld-ILK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="9J2-ae-suB"/>
+            <color key="backgroundColor" white="0.42647688360000002" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Y6t-SK-RVl" firstAttribute="top" secondItem="9J2-ae-suB" secondAttribute="top" constant="150" id="CqZ-le-5ZL"/>
+                <constraint firstItem="Y6t-SK-RVl" firstAttribute="height" secondItem="4AD-Pt-HNt" secondAttribute="height" multiplier="0.4" constant="0.40000000000000002" id="NWH-02-fzs"/>
+                <constraint firstItem="9J2-ae-suB" firstAttribute="trailing" secondItem="eZ8-FG-4Mq" secondAttribute="trailing" constant="50" id="T3v-TR-xU8"/>
+                <constraint firstItem="eZ8-FG-4Mq" firstAttribute="top" secondItem="Y6t-SK-RVl" secondAttribute="bottom" constant="50" id="Xhk-O9-XV7"/>
+                <constraint firstItem="eZ8-FG-4Mq" firstAttribute="leading" secondItem="9J2-ae-suB" secondAttribute="leading" constant="50" id="ZHG-73-AZm"/>
+                <constraint firstItem="eZ8-FG-4Mq" firstAttribute="height" secondItem="4AD-Pt-HNt" secondAttribute="height" multiplier="0.07" id="Zxi-bS-neI"/>
+                <constraint firstItem="Y6t-SK-RVl" firstAttribute="leading" secondItem="9J2-ae-suB" secondAttribute="leading" constant="50" id="ah9-Ez-pti"/>
+                <constraint firstItem="Y6t-SK-RVl" firstAttribute="centerX" secondItem="4AD-Pt-HNt" secondAttribute="centerX" id="pTA-7I-U19"/>
+                <constraint firstItem="9J2-ae-suB" firstAttribute="trailing" secondItem="Y6t-SK-RVl" secondAttribute="trailing" constant="50" id="sKf-eg-4xi"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="barcode" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

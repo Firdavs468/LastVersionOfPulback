@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInVC" customModule="PulBack" customModuleProvider="target">
+            <connections>
+                <outlet property="hiddenPhoneNumberLabel" destination="FdP-H2-M3Z" id="9cO-R9-ZJP"/>
+                <outlet property="phoneNumberTextField" destination="S1i-mC-NOn" id="pd0-qn-kRj"/>
+                <outlet property="pulbackButton" destination="pCr-8V-ogd" id="kJ1-zb-Ckc"/>
+                <outlet property="pulbackImage" destination="U7Q-42-2TO" id="fEm-zF-3h8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3iW-9X-HCP">
+                    <rect key="frame" x="30" y="291" width="368" height="344"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pulback" translatesAutoresizingMaskIntoConstraints="NO" id="U7Q-42-2TO">
+                            <rect key="frame" x="114.66666666666667" y="0.0" width="138.66666666666663" height="139"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="U7Q-42-2TO" secondAttribute="height" id="bIj-KF-xfy"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="f0Z-Fz-KVq">
+                            <rect key="frame" x="0.0" y="139" width="368" height="205"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RPf-Do-fbm">
+                                    <rect key="frame" x="0.0" y="0.0" width="368" height="100"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1i-mC-NOn" customClass="FPNTextField" customModule="FlagPhoneNumber">
+                                            <rect key="frame" x="0.0" y="0.0" width="368" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCr-8V-ogd" customClass="PulBackBtn" customModule="PulBack" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="60" width="368" height="40"/>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                            <state key="normal" title="PulBack ga kirish"/>
+                                            <connections>
+                                                <action selector="registrationButtonPressed:" destination="-1" eventType="touchUpInside" id="rQy-nX-KID"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RfH-C6-rD8">
+                                    <rect key="frame" x="0.0" y="130" width="368" height="75"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Агар Pulback дан аввал фойдаланмаган бўлсангиз     ">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="Georgia"/>
+                                                <font key="NSOriginalFont" size="22" name="Georgia"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="                 ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="22"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="мана бўндан бошланг">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Arial-BoldMT"/>
+                                                <font key="NSOriginalFont" size="21" name="Arial-BoldMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdP-H2-M3Z">
+                    <rect key="frame" x="50" y="685" width="328" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон рақами нотўгри киритилди" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlc-ZL-yGZ">
+                            <rect key="frame" x="10.333333333333343" y="17" width="307.33333333333326" height="21.666666666666671"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="customRed"/>
+                    <constraints>
+                        <constraint firstItem="rlc-ZL-yGZ" firstAttribute="centerX" secondItem="FdP-H2-M3Z" secondAttribute="centerX" id="7Wt-Ic-slG"/>
+                        <constraint firstItem="rlc-ZL-yGZ" firstAttribute="centerY" secondItem="FdP-H2-M3Z" secondAttribute="centerY" id="Arp-OB-J9E"/>
+                        <constraint firstAttribute="height" constant="56" id="BAu-nl-nMA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3iW-9X-HCP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ENy-Ic-WUJ"/>
+                <constraint firstItem="U7Q-42-2TO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.15" id="b7N-gM-Kj1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FdP-H2-M3Z" secondAttribute="trailing" constant="50" id="ffq-Ia-Nud"/>
+                <constraint firstItem="3iW-9X-HCP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hPj-lt-NXv"/>
+                <constraint firstAttribute="trailing" secondItem="3iW-9X-HCP" secondAttribute="trailing" constant="30" id="hgN-cL-vKZ"/>
+                <constraint firstItem="FdP-H2-M3Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="q5f-4g-TZl"/>
+                <constraint firstItem="FdP-H2-M3Z" firstAttribute="top" secondItem="3iW-9X-HCP" secondAttribute="bottom" constant="50" id="yym-4f-ps6"/>
+            </constraints>
+            <point key="canvasLocation" x="31.884057971014496" y="77.678571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pulback" width="784" height="744"/>
+        <namedColor name="customRed">
+            <color red="0.84700000286102295" green="0.32899999618530273" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

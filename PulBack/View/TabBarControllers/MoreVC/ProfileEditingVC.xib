@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileEditingVC" customModule="PulBack" customModuleProvider="target">
+            <connections>
+                <outlet property="chooseBtn" destination="0JW-VP-TYD" id="eLN-Cf-zRh"/>
+                <outlet property="nameTF" destination="nzu-Lq-3G6" id="3ct-sV-0Jh"/>
+                <outlet property="phoneNumberTF" destination="Vre-Lh-FGd" id="91V-DS-QLF"/>
+                <outlet property="profileBackView" destination="TXI-P7-Fog" id="efU-xR-IVY"/>
+                <outlet property="profileImage" destination="S1a-Rl-b2t" id="AXa-dL-LRT"/>
+                <outlet property="surnameTF" destination="OcE-gN-Sb2" id="NiC-sd-2ZM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXI-P7-Fog">
+                    <rect key="frame" x="135.5" y="104" width="143" height="143.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MLb-sz-CMJ">
+                            <rect key="frame" x="0.0" y="0.0" width="143" height="143.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S1a-Rl-b2t">
+                                    <rect key="frame" x="0.0" y="0.0" width="143" height="98.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JW-VP-TYD">
+                                    <rect key="frame" x="0.0" y="98.5" width="143" height="45"/>
+                                    <color key="backgroundColor" name="customRed"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <state key="normal" title="Choose">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="chooseBtnPressed:" destination="-1" eventType="touchUpInside" id="SQU-nk-tQx"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="MLb-sz-CMJ" firstAttribute="leading" secondItem="TXI-P7-Fog" secondAttribute="leading" id="3UO-aP-pXK"/>
+                        <constraint firstAttribute="bottom" secondItem="MLb-sz-CMJ" secondAttribute="bottom" id="Igi-OS-JPp"/>
+                        <constraint firstAttribute="width" secondItem="TXI-P7-Fog" secondAttribute="height" id="LcY-Sh-IEf"/>
+                        <constraint firstAttribute="trailing" secondItem="MLb-sz-CMJ" secondAttribute="trailing" id="hXU-so-cvy"/>
+                        <constraint firstItem="MLb-sz-CMJ" firstAttribute="top" secondItem="TXI-P7-Fog" secondAttribute="top" id="pTq-xQ-OF5"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="100"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="OSU-jK-Fkq">
+                    <rect key="frame" x="16" y="336" width="382" height="233"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vre-Lh-FGd" customClass="PulBackTF" customModule="PulBack" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="61"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzu-Lq-3G6" customClass="PulBackTF" customModule="PulBack" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="86" width="382" height="61"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OcE-gN-Sb2" customClass="PulBackTF" customModule="PulBack" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="172" width="382" height="61"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H27-CF-l7U" customClass="PulBackBtn" customModule="PulBack" customModuleProvider="target">
+                    <rect key="frame" x="30" y="776" width="354" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Yuklash"/>
+                    <connections>
+                        <action selector="savedBtnPressed:" destination="-1" eventType="touchUpInside" id="S3R-l0-Y98"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="OSU-jK-Fkq" firstAttribute="top" secondItem="TXI-P7-Fog" secondAttribute="bottom" constant="60" id="2FW-rG-Ilc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="H27-CF-l7U" secondAttribute="bottom" constant="50" id="3Ne-Nh-QIu"/>
+                <constraint firstItem="TXI-P7-Fog" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AMv-gN-Z78"/>
+                <constraint firstItem="OSU-jK-Fkq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="D5r-nS-cKo"/>
+                <constraint firstItem="TXI-P7-Fog" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.16" id="LUA-4F-56A"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OSU-jK-Fkq" secondAttribute="trailing" constant="16" id="VWX-pg-f1p"/>
+                <constraint firstItem="TXI-P7-Fog" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="aQu-jb-33I"/>
+                <constraint firstItem="0JW-VP-TYD" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.05" id="hOb-dM-0GE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H27-CF-l7U" secondAttribute="trailing" constant="30" id="hah-uo-FDA"/>
+                <constraint firstItem="H27-CF-l7U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="yVc-Bg-YQI"/>
+            </constraints>
+            <point key="canvasLocation" x="-62.318840579710148" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="customRed">
+            <color red="0.84700000286102295" green="0.32899999618530273" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

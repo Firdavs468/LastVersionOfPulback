@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsVC" customModule="PulBack" customModuleProvider="target">
+            <connections>
+                <outlet property="table_view" destination="ARh-j2-Hsf" id="6D5-px-ePS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ARh-j2-Hsf">
+                    <rect key="frame" x="0.0" y="94" width="414" height="403"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-Uq-7Uv">
+                    <rect key="frame" x="125.5" y="537" width="163" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <state key="normal" title="Dasturdan chiqish">
+                        <color key="titleColor" name="customRed"/>
+                    </state>
+                    <connections>
+                        <action selector="logOutBtnPressed:" destination="-1" eventType="touchUpInside" id="0OC-s8-sG5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ARh-j2-Hsf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.45" id="5nK-XL-QzR"/>
+                <constraint firstItem="ARh-j2-Hsf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="YD2-Af-eyb"/>
+                <constraint firstItem="G8j-Uq-7Uv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fp6-sH-8fI"/>
+                <constraint firstItem="G8j-Uq-7Uv" firstAttribute="top" secondItem="ARh-j2-Hsf" secondAttribute="bottom" constant="40" id="sDP-c5-G5g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ARh-j2-Hsf" secondAttribute="trailing" id="w8A-bO-GXw"/>
+                <constraint firstItem="ARh-j2-Hsf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zSx-zc-cEk"/>
+            </constraints>
+            <point key="canvasLocation" x="-159" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="customRed">
+            <color red="0.84700000286102295" green="0.32899999618530273" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
